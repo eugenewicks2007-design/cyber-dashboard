@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Téléchargements - CYBER DASHBOARD</title>
+<meta name="description" content="Dashboard cyberpunk pour télécharger Linux, Windows et apprendre le réseau/sécurité">
+<meta name="keywords" content="Linux, Windows, Kali, TryHackMe, Cisco, cybersécurité, téléchargement OS">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400&display=swap');
+  
+  body {
+    background: #0a0a0a;
+    color: #00ff88;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+  }
+
+  a.back {
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 15px #00ff88;
+    margin: 30px 0 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #111;
+    border: 1px solid #00ff88;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+  }
+
+  .card h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .card a {
+    display: inline-block;
+    background: #00ff88;
+    color: #0a0a0a;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+  }
+
+  .card a:hover {
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+  <a href="index.html" class="back">← Retour</a>
+  <h1>Téléchargements OS</h1>
+  
+  <div class="grid">
+    <div class="card">
+      <h2>Linux</h2>
+      <a href="https://ubuntu.com/download/desktop" target="_blank">Ubuntu</a>
+      <a href="https://www.debian.org/distrib/" target="_blank">Debian</a>
+      <a href="https://fedoraproject.org/workstation/download" target="_blank">Fedora</a>
+      <a href="https://archlinux.org/download/" target="_blank">Arch</a>
+      <a href="https://www.kali.org/get-kali/" target="_blank">Kali</a>
+      <a href="https://parrotsec.org/download/" target="_blank">Parrot</a>
+    </div>
+
+    <div class="card">
+      <h2>Windows</h2>
+      <a href="https://www.microsoft.com/software-download/windows11" target="_blank">Windows 11</a>
+      <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10</a>
+    </div>
+  </div>
+</body>
+</html>

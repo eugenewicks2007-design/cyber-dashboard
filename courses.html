@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cours - CYBER DASHBOARD</title>
+<meta name="description" content="Dashboard cyberpunk pour télécharger Linux, Windows et apprendre le réseau/sécurité">
+<meta name="keywords" content="Linux, Windows, Kali, TryHackMe, Cisco, cybersécurité, téléchargement OS">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400&display=swap');
+  
+  body {
+    background: #0a0a0a;
+    color: #00ff88;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+  }
+
+  a.back {
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 15px #00ff88;
+    margin: 30px 0 40px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #111;
+    border: 1px solid #00ff88;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+  }
+
+  .card h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #bfffd6;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .card a {
+    display: inline-block;
+    background: #00ff88;
+    color: #0a0a0a;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .card a:hover {
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+  <a href="index.html" class="back">← Retour</a>
+  <h1>Cours</h1>
+  
+  <div class="grid">
+    <div class="card">
+      <h2>Réseau</h2>
+      <p>Base du réseau, TCP/IP, routage</p>
+      <a href="https://www.netacad.com/courses/networking" target="_blank">Cisco NetAcad</a>
+    </div>
+
+    <div class="card">
+      <h2>Sécurité</h2>
+      <p>Hack éthique, pentest, CTF</p>
+      <a href="https://tryhackme.com/path/outline/beginner" target="_blank">TryHackMe Beginner</a>
+    </div>
+  </div>
+</body>
+</html>
