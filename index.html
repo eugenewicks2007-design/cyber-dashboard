@@ -3,145 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cyber Dashboard</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-
+<title>CYBER DASHBOARD</title>
+<meta name="description" content="Dashboard cyberpunk pour télécharger Linux, Windows et apprendre le réseau/sécurité">
+<meta name="keywords" content="Linux, Windows, Kali, TryHackMe, Cisco, cybersécurité, téléchargement OS">
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400&display=swap');
+  
+  body {
+    background: #0a0a0a;
+    color: #00ff88;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-body{
-    background:#050505;
-    color:#00ff88;
-    font-family:'Orbitron', sans-serif;
-    overflow-x:hidden;
-}
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    text-shadow: 0 0 15px #00ff88;
+    margin-bottom: 60px;
+  }
 
-header{
-    text-align:center;
-    padding:40px;
-    border-bottom:1px solid #00ff88;
-    box-shadow:0 0 20px #00ff88;
-}
+  .btn-group {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-header h1{
-    font-size:3rem;
-    text-shadow:0 0 15px #00ff88;
-}
+  .btn {
+    background: #111;
+    border: 2px solid #00ff88;
+    color: #00ff88;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+  }
 
-header p{
-    margin-top:10px;
-    color:#7dffbf;
-}
+  .btn:hover {
+    background: #00ff88;
+    color: #0a0a0a;
+    box-shadow: 0 0 30px #00ff88;
+    transform: scale(1.05);
+  }
 
-.container{
-    width:90%;
-    margin:auto;
-    margin-top:40px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#0d0d0d;
-    border:1px solid #00ff88;
-    border-radius:15px;
-    padding:20px;
-    box-shadow:0 0 15px rgba(0,255,136,0.3);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 25px #00ff88;
-}
-
-.card h2{
-    margin-bottom:15px;
-    color:#00ff88;
-}
-
-.card p{
-    color:#b7ffd8;
-}
-
-.terminal{
-    margin-top:50px;
-    width:90%;
-    margin-left:auto;
-    margin-right:auto;
-    background:black;
-    border:1px solid #00ff88;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 0 20px #00ff88;
-}
-
-.line{
-    margin:8px 0;
-    animation:typing 3s infinite;
-}
-
-@keyframes typing{
-    0%{opacity:0;}
-    50%{opacity:1;}
-    100%{opacity:0;}
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    margin-top:50px;
-    color:#00ff88;
-}
+  @media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .btn { padding: 15px 25px; font-size: 1rem; }
+  }
 </style>
 </head>
 <body>
-
-<header>
-    <h1>CYBER DASHBOARD</h1>
-    <p>Mon premier site futuriste</p>
-</header>
-
-<div class="container">
-
-    <div class="card">
-        <h2>Système</h2>
-        <p>Linux Lubuntu actif</p>
-    </div>
-
-    <div class="card">
-        <h2>Réseau</h2>
-        <p>Analyse réseau en cours...</p>
-    </div>
-
-    <div class="card">
-        <h2>Sécurité</h2>
-        <p>Firewall sécurisé</p>
-    </div>
-
-    <div class="card">
-        <h2>Projet</h2>
-        <p>Développement Web Python</p>
-    </div>
-
-</div>
-
-<div class="terminal">
-    <div class="line">> Initialisation du système...</div>
-    <div class="line">> Connexion sécurisée...</div>
-    <div class="line">> Dashboard chargé...</div>
-</div>
-
-<footer>
-    © 2026 Cyber Interface
-</footer>
-
+  <h1>CYBER DASHBOARD</h1>
+  <div class="btn-group">
+    <a href="downloads.html" class="btn">Téléchargements</a>
+    <a href="courses.html" class="btn">Cours</a>
+  </div>
 </body>
 </html>
